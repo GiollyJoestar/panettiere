@@ -2,7 +2,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'panetteri';
+$dbname = 'panettiere';
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn)
     die('Could not connect');

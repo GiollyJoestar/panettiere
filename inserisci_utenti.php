@@ -2,7 +2,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'panettieri';
+$dbname = 'panettiere';
 $id_squadra=1;
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn)
@@ -16,7 +16,8 @@ if(mysqli_query($conn,$sql))
     echo "utente aggiunto";
 }
 else
-    {echo"Connect failed: \n". mysqli_error($conn);
-    exit();}
+{echo"Connect failed: \n". mysqli_error($conn);
+exit();}
 // 0 è non loggato,1 è admin,2 è superadmin
+include "footer.html";
 ?>
