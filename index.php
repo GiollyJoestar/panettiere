@@ -15,7 +15,9 @@
             echo '<div class=" p-5 "><form action="logout.php"><button type="submit" class="btn btn-primary position-relative start-50 translate-middle">Logout</button></form></div>';     
             if($_SESSION['permessi']>0)
             {
-                print '<div class"p-2"><a href="form_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Aggiungi un prodotto</button></a></div>';
+                print '<div class="p-2"><a href="form_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Aggiungi un prodotto</button></a></div>';
+                print '<div class="p-2"><a href="form_vendita.php"><button class="btn btn-primary position-relative start-50 translate-middle">Vendi</button></a></div>';
+
             }
             if($_SESSION['permessi']>1)
             {
