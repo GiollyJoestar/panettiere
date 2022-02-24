@@ -15,11 +15,12 @@
             echo '<div class=" p-5 "><form action="logout.php"><button type="submit" class="btn btn-primary position-relative start-50 translate-middle">Logout</button></form></div>';     
             if($_SESSION['permessi']>0)
             {
-                print '<a href="form_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Aggiungi un prodotto</button></a>';
+                print '<div class"p-2"><a href="form_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Aggiungi un prodotto</button></a></div>';
             }
             if($_SESSION['permessi']>1)
             {
-
+                print '<div class="p-2"><a href="form_crea_clienti.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un cliente</button></a><div>';
+                print '<div class="p-2"><a href="form_crea_metodo_pagamento.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un metodo di pagamento</button></a><div>';
             }
         }
         

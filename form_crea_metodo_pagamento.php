@@ -8,25 +8,23 @@
         session_start();
         if(isset($_SESSION['permessi']))
         {
-            if($_SESSION['permessi']>0)
+            if($_SESSION['permessi']>1)
             {
-                print '<form action="crea_prodotto.php" method="POST">
+                print '<form action="crea_metodo_pagamento.php" method="POST">
                 <div class=" p-5 ">
                     <div class="mb-3 form-group position-relative top-0 start-50 translate-middle ">
-                        <input style="text-align:center;" class="form-control" type="text" name="nome" placeholder="Inserisci nome prodotto" />
+                        <input style="text-align:center;" class="form-control" type="text" name="nome" placeholder="Inserisci nome metodo pagamento" />
                     </div>
-                    <div class="mb-3 form-group position-relative top-0 start-50 translate-middle ">
-                        <input style="text-align:center;" class="form-control" type="number" name="prezzo" placeholder="Inserisci prezzo al kg" />
-                    </div>
+                </div>
                     <button type="submit" class="btn btn-primary position-relative top-0 start-50 translate-middle">Conferma</button>
                 </div>
             </form>';
             }
-            else 
-                print"non hai i permessi necessari";
+            else
+                print "non hai i permessi necessari";
         }
-        else 
-            print"non hai i permessi necessari";
+        else
+            print "non hai i permessi necessari";
         include "footer.html";
         ?>
     
