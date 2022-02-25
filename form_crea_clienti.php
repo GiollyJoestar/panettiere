@@ -44,8 +44,7 @@
         else
             print "non hai i permessi necessari";
         
-        include "footer.php";
-        ?>                                                           
-                                 
+        include "footer.html";
+        ?>                                                                                          
     </body>
 </html>

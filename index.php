@@ -24,8 +24,7 @@
                 print '<div class="p-2"><a href="form_crea_clienti.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un cliente</button></a><div>';
                 print '<div class="p-2"><a href="form_crea_metodo_pagamento.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un metodo di pagamento</button></a><div>';
             }
-        }
-        
+        }       
         ?>
     </body>
 </html>
