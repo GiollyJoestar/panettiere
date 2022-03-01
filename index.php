@@ -17,6 +17,7 @@
             {
                 print '<div class="p-2"><a href="form_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Aggiungi un prodotto</button></a></div>';
                 print '<div class="p-2"><a href="form_vendita.php"><button class="btn btn-primary position-relative start-50 translate-middle">Vendi</button></a></div>';
+                print '<div class="p-2"><a href="form_modifica_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Modifica prodotto</button></a></div>';
 
             }
             if($_SESSION['permessi']>1)

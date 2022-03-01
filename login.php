@@ -31,4 +31,5 @@ if(mysqli_fetch_array($query)!=null)
     
 else
     echo "email o password sbagliata";
+include "footer.html";
 ?>
