@@ -31,7 +31,7 @@
                         <input style="text-align:center;" class="form-control" type="text" name="nome_prodotto" placeholder="Nuovo nome prodotto"/>
                     </div>';
                 print'<div class="mb-3 form-group position-relative top-0 start-50 translate-middle ">
-                        <input style="text-align:center;" class="form-control" type="number" name="prezzo" placeholder="Nuovo prezzo al chilo"/>
+                        <input style="text-align:center;" class="form-control" type="number" name="prezzo" min="0" step="0.01" placeholder="Nuovo prezzo al chilo"/>
                         </div>';
                 print' <button type="submit" class="btn btn-primary position-relative top-0 start-50 translate-middle">Conferma</button>
                         </div></form>';

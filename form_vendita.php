@@ -38,7 +38,7 @@
             print' </select>
             </div>
             <div class="mb-3 form-group position-relative top-0 start-50 translate-middle ">
-                <input class="form-control" type="number" name="qt" placeholder="quantità in kg">
+                <input class="form-control" type="number" name="qt" min="0" step="0.01" placeholder="quantità in kg">
             </div>
             <div class="mb-3 form-group position-relative top-0 start-50 translate-middle ">
             <input  type="date" name="data" placeholder="data vendita">

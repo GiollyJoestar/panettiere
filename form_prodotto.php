@@ -16,7 +16,7 @@
                         <input style="text-align:center;" class="form-control" type="text" name="nome" placeholder="Inserisci nome prodotto" />
                     </div>
                     <div class="mb-3 form-group position-relative top-0 start-50 translate-middle ">
-                        <input style="text-align:center;" class="form-control" type="number" name="prezzo" placeholder="Inserisci prezzo al kg" />
+                        <input style="text-align:center;" class="form-control" type="number" min="0" step="0.01" name="prezzo" placeholder="Inserisci prezzo al kg" />
                     </div>
                     <button type="submit" class="btn btn-primary position-relative top-0 start-50 translate-middle">Conferma</button>
                 </div>
