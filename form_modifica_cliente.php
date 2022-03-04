@@ -8,7 +8,7 @@
         session_start();
         if(isset($_SESSION['permessi']))
         {
-            if($_SESSION['permessi']>0)
+            if($_SESSION['permessi']>1)
             {
                 $servername = 'localhost';
                 $username = 'root';

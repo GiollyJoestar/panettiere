@@ -1,6 +1,11 @@
 <?php
     session_start();
-    if(isset($_SESSION['permessi']))
+    if(empty($_POST['cliente'])||empty($_POST['prodotto'])||empty($_POST['qt'])||empty($_POST['data']))
+    {
+        header("Location:form_vendita.php");        
+        print "dati invalidi";              
+    }
+    else if(isset($_SESSION['permessi']))
     {
         if($_SESSION['permessi']>0)
         {
@@ -10,7 +15,7 @@
             $dbname = 'panettiere';
             $conn = mysqli_connect($servername, $username, $password, $dbname);
             if (!$conn)
-                die('Could not connect');           
+                die('Could not connect'); 
             $id_cliente=$_POST['cliente'];
             $id_prodotto=$_POST['prodotto'];
             $qt=$_POST['qt'];
