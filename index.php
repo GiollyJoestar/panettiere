@@ -21,10 +21,10 @@
             }
             if($_SESSION['permessi']>1)
             {
-                print '<div class="p-2"><a href="form_crea_clienti.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un cliente</button></a><div>';
-                print '<div class="p-2"><a href="form_crea_metodo_pagamento.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un metodo di pagamento</button></a><div>';
-                print '<div class="p-2"><a href="form_modifica_cliente.php"><button class="btn btn-primary position-relative start-50 translate-middle">Modifica cliente</button></a><div>';
-                print '<div class="p-2"><a href="form_fattura.php"><button class="btn btn-primary position-relative start-50 translate-middle">Stampa fattura</button></a><div>';
+                print '<div class="p-2"><a href="form_crea_clienti.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un cliente</button></a></div>';
+                print '<div class="p-2"><a href="form_crea_metodo_pagamento.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un metodo di pagamento</button></a></div>';
+                print '<div class="p-2"><a href="form_modifica_cliente.php"><button class="btn btn-primary position-relative start-50 translate-middle">Modifica cliente</button></a></div>';
+                print '<div class="p-2"><a href="form_fattura.php"><button class="btn btn-primary position-relative start-50 translate-middle">Stampa fattura</button></a></div>';
             }
         }       
         ?>
