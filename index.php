@@ -8,25 +8,31 @@
         session_start();
         if(!isset($_SESSION['permessi']))
         {
-            echo '<div class=" p-5 "><form action="form_login.php"><button type="submit" class="btn btn-primary position-relative start-50 translate-middle">Login</button></form></div>';
+            echo '<div class=" p-5 "><a href="form_login.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Login</a></div>';
         }
         else
         { 
-            echo '<div class=" p-5 "><form action="logout.php"><button type="submit" class="btn btn-primary position-relative start-50 translate-middle">Logout</button></form></div>';     
+            echo '<div class=" p-5 "><a href="logout.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Logout</a></div>';     
             if($_SESSION['permessi']>0)
             {
-                print '<div class="p-2"><a href="form_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Aggiungi un prodotto</button></a></div>';
-                print '<div class="p-2"><a href="form_modifica_prodotto.php"><button class="btn btn-primary position-relative start-50 translate-middle">Modifica prodotto</button></a></div>';
-                print '<div class="p-2"><a href="form_vendita.php"><button class="btn btn-primary position-relative start-50 translate-middle">Vendi</button></a></div>';
+                print '<div class="p-2"><a href="form_prodotto.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Aggiungi un prodotto</a></div>';
+                print '<div class="p-2"><a href="form_modifica_prodotto.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Modifica prodotto</a></div>';
+                print '<div class="p-2"><a href="form_vendita.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Vendi</a></div>';
             }
             if($_SESSION['permessi']>1)
             {
-                print '<div class="p-2"><a href="form_crea_clienti.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un cliente</button></a></div>';
-                print '<div class="p-2"><a href="form_crea_metodo_pagamento.php"><button class="btn btn-primary position-relative start-50 translate-middle">Crea un metodo di pagamento</button></a></div>';
-                print '<div class="p-2"><a href="form_modifica_cliente.php"><button class="btn btn-primary position-relative start-50 translate-middle">Modifica cliente</button></a></div>';
-                print '<div class="p-2"><a href="form_fattura.php"><button class="btn btn-primary position-relative start-50 translate-middle">Stampa fattura</button></a></div>';
+                print '<div class="p-2"><a href="form_crea_clienti.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Crea un cliente</a></div>';
+                print '<div class="p-2"><a href="form_crea_metodo_pagamento.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Crea un metodo di pagamento</a></div>';
+                print '<div class="p-2"><a href="form_modifica_cliente.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width">Modifica cliente</a></div>';
+                print '<div class="p-2"><a class="btn btn-primary position-relative start-50 translate-middle fixed-width text-center" href="form_fattura.php">Stampa fattura</a></div>';
+                print '<div class="p-2"><a href="form_ddt.php" class="btn btn-primary position-relative start-50 translate-middle fixed-width text-center">Stampa ddt</a></div>';
             }
         }       
         ?>
     </body>
+    <style>
+        .fixed-width{
+            width: 250px;
+        }
+    </style>
 </html>
