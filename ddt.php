@@ -35,5 +35,7 @@ if(isset($_SESSION['permessi']))
            
     }
 }
+print'<div class="p-5">';
 include "footer.html";
+print"</div>";
 ?>

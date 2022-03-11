@@ -42,7 +42,9 @@
             print"<tfoot class='tfoot'><tr><td>Totale</td><td></td><td>$tot €</td></tr></tfoot></table>";      
         }
     }
+    print'<div class="p-5">';
     include "footer.html";
+    print"</div>";
     ?>   
     </body>
 </html>
